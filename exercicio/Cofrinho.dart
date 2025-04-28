@@ -1,0 +1,11 @@
+class Cofrinho {
+
+double 
+
+
+
+
+
+
+}
+   
