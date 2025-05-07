@@ -1,14 +1,17 @@
+import '../herenca/exercicio.dart';
+
 abstract class Funcionario {
   void trabalhar();
-  void comer();
 }
 
-class Robo implements Funcionario {
-  @override
-  void trabalhar() ;
-   print('Robô trabalhando');
+abstract  class Alimentador{
+}
 
-  @override
-  void comer() ;
-   throw Exception('Robô não come');
+class Humano implements funciorario,Alimentador{
+    
+    @override
+    void trabalhar() => print("Humano trabalhando");
+
+    @override
+    void comer() => print("")
 }

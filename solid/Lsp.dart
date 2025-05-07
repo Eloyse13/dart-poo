@@ -11,7 +11,7 @@
  class Pinguim extends Ave{
 
     void voar(){
-        thorow Exception("Pinguins não voam");
+        throw Exception("Pinguins não voam");
     }
  }
 
@@ -19,7 +19,7 @@
  * SOLUÇÃO
  *agora pinguim não precisa implementar voo.
   */
-  class Ave{
+  class Aves{
     void andar(){
         print("ave andando");
     }
@@ -28,13 +28,13 @@
     void voar(); // metodo abstrato
   }
   class Andorinha extends AveQueVoa{
-    @overide
+    @override
     void voar(){
         print("andorinha voando");
     }
   }
 
-  class Pingim extends Ave{
+  class Pingim extends Aves{
     //pinguim não voa,portanto nao implementa voar
     @override
     void andar(){

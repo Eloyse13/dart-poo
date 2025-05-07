@@ -9,10 +9,12 @@
  }
 
  class Robo implements Funcionario{
-    @overridevoid trabalhar(){
+    @override 
+    void trabalhar(){
     print("rôbo trabalhado");
     }
-    @overridevoid comer(){
+    @override
+    void comer(){
         throw Exception("Robô não come");
     }
  }
@@ -28,14 +30,14 @@ abstract class Alimentador{
     void comer();
 }
 
-class Robos implements Trabalhador,Alimentador{
+class Robos implements Trabalhador{
     @override
     void trabalhar(){
         print("Rôbo trabalhando");  
     }
 }
 
-class Humano implements Trabalhador,Alimentador{
+class Humano implements Trabalhador, Alimentador{
     @override
     void trabalhar(){
         print("humano trabalhando");
