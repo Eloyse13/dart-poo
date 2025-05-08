@@ -1,4 +1,4 @@
-impor 'Veiculo.dart';
+import  'Veiculo.dart';
 
 class Moto extends Veiculo{
 
@@ -19,7 +19,7 @@ class Moto extends Veiculo{
 
     @override
     void businar(){
-        prit("pi pi");
+        print("pi pi");
     }
 
 }
